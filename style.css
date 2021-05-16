@@ -1,0 +1,15 @@
+body {
+  background-color: #171717;
+  background-image:url(../logo-invert.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height:90%;
+  -webkit-transition: background-image 1s ease-in-out;
+  -moz-transition: background-image 1s ease-in-out;
+  -o-transition: background-image 1s ease-in-out;
+  transition: background-image 1s ease-in-out;
+}
+
+body:hover {
+  background-image:url(../logo.png);
+}

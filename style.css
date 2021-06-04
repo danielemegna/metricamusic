@@ -1,6 +1,6 @@
 body {
   background-color: #171717;
-  background-image:url(../logo-invert.png);
+  background-image:url(../logo-nera.png);
   background-repeat: no-repeat;
   background-position: center center;
   min-height:90%;
@@ -11,5 +11,11 @@ body {
 }
 
 body:hover {
-  background-image:url(../logo.png);
+  background-image:url(../logo-bianca.png);
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-size: 75%;
+  }
 }

@@ -5,6 +5,7 @@
 ## Dev Notes
 
 ```
+$ docker build -t metricamusic .
 $ docker run --rm -dp 99:80 --name metricamusic metricamusic
 ```
 

@@ -1,6 +1,6 @@
 # Metrica Music
 
-![logo](logo.png)
+![logo](./material/logo-first.png)
 
 ## Dev Notes
 

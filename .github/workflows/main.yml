@@ -1,0 +1,26 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    runs-on: alpine
+    steps:
+
+      - name: install openssh-client
+        run: |
+          apk update
+          apk add openssh-client
+
+      - name: deploy via ssh commands
+        run: |
+          ssh root@metricamusic.it "
+          cd metricamusic ;
+          git pull ;
+          docker build -t metricamusic .;
+          docker stop metricamusic ;
+          docker run --rm -dp 99:80 --name metricamusic metricamusic"

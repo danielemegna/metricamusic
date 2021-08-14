@@ -8,19 +8,19 @@ on:
 
 jobs:
   deploy:
-    runs-on: alpine
+    runs-on: ubuntu-latest
     steps:
 
-      - name: install openssh-client
-        run: |
-          apk update
-          apk add openssh-client
-
       - name: deploy via ssh commands
-        run: |
-          ssh root@metricamusic.it "
-          cd metricamusic ;
-          git pull ;
-          docker build -t metricamusic .;
-          docker stop metricamusic ;
-          docker run --rm -dp 99:80 --name metricamusic metricamusic"
+        uses: fifsky/ssh-action@master
+        with:
+          command: |
+            cd metricamusic
+            git pull
+            docker build -t metricamusic .
+            docker stop metricamusic 
+            docker run --rm -dp 99:80 --name metricamusic metricamusic
+          host: metricamusic.it
+          user: root
+          key: ${{ secrets.PRIVATE_KEY}}
+          

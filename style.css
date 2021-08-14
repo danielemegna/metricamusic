@@ -1,21 +1,26 @@
 body {
   background-color: #171717;
-  background-image:url(../logo-nera.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  min-height:90%;
-  -webkit-transition: background-image 1s ease-in-out;
-  -moz-transition: background-image 1s ease-in-out;
-  -o-transition: background-image 1s ease-in-out;
-  transition: background-image 1s ease-in-out;
+  display:table;
+  margin:0;
+  width:100%;
+  height:100%;
 }
 
-body:hover {
-  background-image:url(../logo-bianca.png);
+.verticalhorizontal {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+img#logo {
+  filter: invert(1);
+  width: 30%;
 }
 
 @media only screen and (max-width: 768px) {
-  body {
-    background-size: 75%;
+  img#logo {
+    width: 90%;
   }
 }

@@ -4,8 +4,15 @@
 }
 
 .u-section-1 .u-sheet-1 {
-  min-height: 565px;
+  min-height: 640px;
+  align-items: center;
 }
+
+img#logo {
+  filter: invert(1);
+  width: 35%;
+}
+
 
 .u-section-1 .u-text-1 {
   font-size: 9.375rem;
@@ -16,13 +23,16 @@
 
 @media (max-width: 1199px) {
   .u-section-1 .u-sheet-1 {
-    min-height: 500px;
+    min-height: 580px;
   }
 }
 
 @media (max-width: 575px) {
+  img#logo {
+    width: 90%;
+  }
   .u-section-1 .u-sheet-1 {
-    min-height: 339px;
+    min-height: 560px;
   }
 
   .u-section-1 .u-text-1 {
@@ -508,7 +518,7 @@
 
 @media (max-width: 991px) {
   .u-section-4 {
-    min-height: 3234px;
+    min-height: 1234px;
   }
 
   .u-section-4 .u-layout-cell-1 {

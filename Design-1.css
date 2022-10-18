@@ -393,7 +393,9 @@ img#logo {
     margin-right: initial;
     margin-left: initial;
   }
-}.u-section-4 {
+}
+
+.u-section-4 {
   min-height: 931px;
 }
 
@@ -473,6 +475,12 @@ img#logo {
 .u-section-4 .u-image-7 {
   min-height: 310px;
   background-image: url("images/pexelsphoto911738.jpeg");
+  background-position: 50% 50%;
+}
+
+.u-section-4 .u-image-9 {
+  min-height: 300px;
+  background-image: url("images/vinyl1.jpg");
   background-position: 50% 50%;
 }
 
@@ -960,7 +968,9 @@ img#logo {
     margin-right: initial;
     margin-left: initial;
   }
-}.u-section-6 .u-sheet-1 {
+}
+
+.u-section-6 .u-sheet-1 {
   min-height: 249px;
 }
 
@@ -1011,7 +1021,7 @@ img#logo {
 
 @media (max-width: 767px) {
   .u-section-6 .u-sheet-1 {
-    min-height: 296px;
+    min-height: 200px;
   }
 
   .u-section-6 .u-text-1 {

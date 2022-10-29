@@ -1,0 +1,10 @@
+.artist-left-slide {
+  object-fit: contain;
+  width: 200px;
+}
+
+@media (min-width: 767px) {
+.artist-left-slide {
+  width: 400px;
+}
+}

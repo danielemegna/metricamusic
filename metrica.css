@@ -1,6 +1,16 @@
+.artist {
+  overflow: hidden;
+}
+
 .artist-left-slide {
   object-fit: contain;
   width: 200px;
+}
+
+.logo-right-slide {
+  object-fit: contain;
+  width: 200px;
+  align-items: flex-end;
 }
 
 @media (min-width: 767px) {

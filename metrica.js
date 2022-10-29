@@ -8,15 +8,15 @@ $(document).ready(() => {
     const artistDelta = pageBottom - $(artist).offset().top
     const newLeftMargin = -artist.height() - 200 + artistDelta
 
-    if (newLeftMargin < 0) {
+    if (newLeftMargin < -100) {
       artist.css("margin-left", newLeftMargin)
     }
 
     const logo = $(".logo-right-slide")
     const logoDelta = pageBottom - $(logo).offset().top
-    const newRightMargin = -logo.height() - 400 + logoDelta
+    const newRightMargin = -logo.height() - 600 + logoDelta
 
-    if (newRightMargin < 0) {
+    if (newRightMargin < -120) {
       logo.css("margin-right", newRightMargin)
     }
 

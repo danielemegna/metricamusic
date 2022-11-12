@@ -43,3 +43,18 @@ header #back-home img {
     letter-spacing: 4px;
     font-weight: 350;
 }
+
+.bio {
+    box-shadow: 0 -20px 20px 20px black;
+    position: relative;
+    z-index: 20;
+}
+
+.bio p {
+    font-family: Roboto, sans-serif;
+    color: white;
+    margin: 24px;
+    letter-spacing: 2px;
+    text-align: justify;
+    font-weight: 300;
+}

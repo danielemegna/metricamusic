@@ -4,14 +4,21 @@ body {
 }
 header {
     height: 80px;
-    box-shadow: 0 0 20px 20px white;
-    background-image: url(material/stella-bianca.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: invert(100%);
+    box-shadow: 0 0 20px 20px black;
     position: relative;
     z-index: 20;
+    text-align: center;
+    padding-top: 6px;
+}
+
+header a#back-home {
+    height: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.500);
+}
+
+header #back-home img {
+    height: 100%;
+    filter: invert(100%);
 }
 
 .main-image {

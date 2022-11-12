@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+header {
+    height: 80px;
+    box-shadow: 0 0 20px 20px white;
+    background-image: url(material/stella-bianca.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(100%);
+    position: relative;
+    z-index: 20;
+}
+
+.main-image {
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 10;
+}

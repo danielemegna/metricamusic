@@ -44,6 +44,11 @@ header #back-home img {
     font-weight: 350;
 }
 
+.main-image img {
+    margin: 0 0 30px 24px;
+    width: 280px;
+}
+
 .bio {
     box-shadow: 0 -20px 20px 20px black;
     position: relative;

@@ -2,6 +2,7 @@ body {
     background-color: black;
     margin: 0;
 }
+
 header {
     height: 80px;
     box-shadow: 0 0 20px 20px black;
@@ -27,7 +28,7 @@ header #back-home img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    display:flex;
+    display: flex;
     align-items: end;
 }
 
@@ -53,6 +54,7 @@ header #back-home img {
     box-shadow: 0 -20px 20px 20px black;
     position: relative;
     z-index: 20;
+    padding-bottom: 45px;
 }
 
 .bio p {
@@ -62,4 +64,24 @@ header #back-home img {
     letter-spacing: 2px;
     text-align: justify;
     font-weight: 300;
+}
+
+.work {
+    box-shadow: 0 -10px 20px 20px white;
+    position: relative;
+    z-index: 20;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.work img.cover {
+    width: 70%;
+    box-shadow: 8px 8px 20px 0 gray;
+}
+
+.work h3 {
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
 }

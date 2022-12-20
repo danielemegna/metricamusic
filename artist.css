@@ -67,10 +67,10 @@ header #back-home img {
 }
 
 .work {
-    box-shadow: 0 -10px 20px 20px white;
+    box-shadow: 0 0 30px 40px white;
     position: relative;
     z-index: 20;
-    background-color: white;
+    background: linear-gradient(white, gray);
     padding: 10px;
     text-align: center;
 }
@@ -81,6 +81,10 @@ header #back-home img {
 }
 
 .work h3 {
+    margin: 12px;
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 4px 4px 6px black;
     text-transform: uppercase;
     font-family: Roboto, sans-serif;
     font-weight: 400;

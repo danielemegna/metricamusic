@@ -1,6 +1,7 @@
 body {
     background-color: black;
     margin: 0;
+    font-family: Roboto, sans-serif;
 }
 
 header {
@@ -37,7 +38,6 @@ header #back-home img {
     font-size: 3em;
     text-transform: uppercase;
     text-shadow: 4px 4px 6px black;
-    font-family: Roboto, sans-serif;
     margin: 0;
     padding: 24px 30px;
     transform: scaleY(0.8);
@@ -51,41 +51,50 @@ header #back-home img {
 }
 
 .bio {
-    box-shadow: 0 -20px 20px 20px black;
+    background-color: white;
+    box-shadow: 0 -20px 20px 20px white;
     position: relative;
     z-index: 20;
-    padding-bottom: 45px;
+    padding-bottom: 20px;
 }
 
 .bio p {
-    font-family: Roboto, sans-serif;
-    color: white;
+    color: rgb(51, 51, 51);
     margin: 24px;
     letter-spacing: 2px;
     text-align: justify;
-    font-weight: 300;
 }
 
 .work {
-    box-shadow: 0 0 30px 40px white;
     position: relative;
     z-index: 20;
-    background: linear-gradient(white, gray);
-    padding: 10px;
+    background: linear-gradient(white 10%, rgb(18 18 18) 50%);
+    padding: 10px 30px;
+    color: white;
+}
+
+.work span.cover {
+    width: 100%;
+    display: block;
     text-align: center;
 }
 
-.work img.cover {
+.work span.cover img {
     width: 70%;
-    box-shadow: 8px 8px 20px 0 gray;
+    box-shadow: 8px 8px 20px 0 black;
 }
 
-.work h3 {
-    margin: 12px;
-    color: white;
-    font-size: 1.5em;
+.work h3, .work h5 {
     text-shadow: 4px 4px 6px black;
     text-transform: uppercase;
-    font-family: Roboto, sans-serif;
+}
+.work h3 {
+    margin: 18px 0 6px 0;
     font-weight: 400;
+    font-size: 1.5em;
+}
+
+.work h5 {
+    color: rgb(210 210 210);
+    margin: 0;
 }

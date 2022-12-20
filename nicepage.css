@@ -8574,12 +8574,9 @@ section.u-image,
     top: 0 !important;
   }
 }
-
-
 .u-valign-middle,
 .u-valign-top,
-.u-valign-bottom,
-.u-align-end {
+.u-valign-bottom {
   display: flex;
   flex-direction: column;
 }
@@ -8624,16 +8621,12 @@ section.u-image,
   }
 }
 .u-valign-middle > *,
-.u-align-end > *,
 .u-valign-top > *,
 .u-valign-bottom > * {
   flex-shrink: 0;
 }
 .u-valign-middle {
   justify-content: center;
-}
-.u-align-end {
-  align-items: end;
 }
 @media (min-width: 1200px) {
   .u-valign-middle-xl {

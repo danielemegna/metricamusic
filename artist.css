@@ -86,15 +86,32 @@ header #back-home img {
 
 .work h3, .work h5 {
     text-shadow: 4px 4px 6px black;
-    text-transform: uppercase;
-}
-.work h3 {
-    margin: 18px 0 6px 0;
-    font-weight: 400;
-    font-size: 1.5em;
 }
 
-.work h5 {
+.work > h3 {
+    margin: 18px 0 4px 0;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.work > h5 {
     color: rgb(210 210 210);
     margin: 0;
+    font-weight: 300;
+}
+
+.work span.track > h3 {
+    font-size: 1.0em;
+    margin: 18px 0 4px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.work span.track > h5 {
+    margin: 0;
+    color: rgb(210 210 210);
+    font-size: 0.8em;
+    font-weight: 300;
 }

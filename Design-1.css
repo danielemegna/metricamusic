@@ -41,9 +41,9 @@ img#logo {
   }
 }
 
-/* .u-section-2 .u-sheet-1 {
+.u-section-2 .u-sheet-1 {
   min-height: 500px;
-} */
+}
 
 .u-section-2 .u-text-1 {
   letter-spacing: 2px;
@@ -93,9 +93,9 @@ img#logo {
 }
 
 @media (max-width: 575px) {
-  .u-section-2 .u-sheet-1 {
+/*   .u-section-2 .u-sheet-1 {
     min-height: 619px;
-  }
+  } */
 
   .u-section-2 .u-text-2 {
     width: 340px;

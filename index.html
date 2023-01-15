@@ -22,6 +22,19 @@
           display: none!important;
         }
       }
+
+      a.artist-square {
+      padding: 20px;
+      background-size: cover;
+      background-position: center;
+      min-height: 300px;
+      display: flex;
+      align-items: end;
+    }
+
+    a.artist-square>img {
+      width: 70%;
+    }
     </style>
 
     <meta name="theme-color" content="black">
@@ -108,16 +121,20 @@
                     <div class="u-size-30">
                       <div class="u-layout-row">
 
-                        <a href="/blade" target="_blank">
-                          <div class="u-container-style u-image u-layout-cell u-size-30 u-image-2">
-                            <div class="u-container-layout u-container-layout-2"></div>
-                          </div>
+                        <a
+                          class="artist-square"
+                          href="/blade" target="_blank"
+                          style="background-image: url(/images/blade/main.jpeg);"
+                        >
+                          <img src="images/blade/logo.png" />
                         </a>
 
-                        <a href="/filtro" target="_blank">
-                          <div class="u-container-style u-image u-layout-cell u-right-cell u-size-30 u-image-7">
-                            <div class="u-container-layout u-container-layout-7"></div>
-                          </div>
+                        <a
+                          class="artist-square"
+                          href="/filtro"target="_blank"
+                          style="background-image: url(/images/filtro/main.jpg)"
+                        >
+                          <img src="images/filtro/logo.png" />
                         </a>
 
                       </div>

@@ -69,7 +69,7 @@ header #back-home img {
     position: relative;
     z-index: 20;
     background: linear-gradient(white 10%, rgb(20, 20, 20) 30%);
-    padding: 10px 30px 60px;
+    padding: 10px 30px 40px;
     color: white;
 }
 
@@ -114,4 +114,16 @@ header #back-home img {
     color: rgb(210 210 210);
     font-size: 0.8em;
     font-weight: 300;
+}
+
+.work a.download-button {
+    display: block;
+    width: auto;
+    margin-top: 40px;
+    padding: 0 40px;
+}
+
+.work a.download-button img {
+    display: block;
+    width: 100%;
 }

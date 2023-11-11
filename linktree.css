@@ -1,5 +1,6 @@
 body {
     box-sizing: border-box;
+    text-align: center;
 }
 
 img.background {
@@ -26,4 +27,32 @@ span.cover {
 span.cover img {
     width: 50%;
     box-shadow: 8px 8px 20px 0 black;
+    margin-bottom: 8px;
+}
+
+a.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+    margin-top: 16px;
+    border: 2px solid white;
+    width: 85%;
+    height: 60px;
+    border-radius: 30px;
+}
+
+a.button img.social-label {
+    max-height: 28px;
+    max-width: 175px;
+    object-fit: contain;
+}
+
+
+img.social-icon {
+    height: 40px;
+    width: auto;
+    object-view-box: inset(0px 0px 388px 386px);
+    content: url('/images/social-icons.png');
 }

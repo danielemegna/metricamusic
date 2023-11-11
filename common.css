@@ -2,6 +2,8 @@ body {
     background-color: black;
     margin: 0;
     font-family: Roboto, sans-serif;
+    width: 100vw;
+    height: 100vh;
 }
 
 header {
@@ -11,6 +13,7 @@ header {
     z-index: 20;
     text-align: center;
     padding-top: 6px;
+    background-color: black;
 }
 
 header a#back-home {

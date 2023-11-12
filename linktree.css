@@ -50,9 +50,22 @@ a.button img.social-label {
 }
 
 
-img.social-icon {
+a.button img.social-icon {
     height: 40px;
     width: auto;
     object-view-box: inset(0px 0px 388px 386px);
     content: url('/images/social-icons.png');
+}
+
+a.button {
+    text-decoration: none;
+}
+
+a.button label {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: Roboto, sans-serif;
+    color: white;
+    font-size: x-large;
+    padding-right: 4px;
 }

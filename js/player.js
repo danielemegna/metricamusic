@@ -2,6 +2,7 @@ const albumTitle = document.querySelector("h3.album-title").innerText;
 const albumCoverSrc = document.querySelector("img.cover").getAttribute("src");
 const albumTracks = Array.from(document.querySelectorAll("span.track[audio]"));
 const audioTag = document.querySelector("audio");
+const pauseButton = document.querySelector("#pause-button");
 
 albumTracks.forEach((track) => {
   return; // enable here
@@ -9,6 +10,7 @@ albumTracks.forEach((track) => {
     const trackToPlay = e.currentTarget;
     albumTracks.forEach((t) => t.classList.remove("playing"));
     trackToPlay.classList.add("playing");
+    pauseButton.classList.remove("hidden");
     playTrack(trackToPlay);
   });
 });
@@ -17,8 +19,27 @@ albumTracks.forEach((track) => {
 navigator.mediaSession.setActionHandler('nexttrack', () => nextTrack());
 audioTag.addEventListener("ended", () => nextTrack());
 
-navigator.mediaSession.setActionHandler('play', () => audioTag.play());
-navigator.mediaSession.setActionHandler('pause', () => audioTag.pause());
+navigator.mediaSession.setActionHandler('play', () => audioPlay());
+navigator.mediaSession.setActionHandler('pause', () => audioPause());
+pauseButton.addEventListener("click", () => toggleAudioPlayPause());
+
+function toggleAudioPlayPause() {
+  if(audioTag.paused) {
+    audioPlay();
+    return;
+  }
+  audioPause();
+}
+
+function audioPlay() {
+  audioTag.play();
+  // change button icon
+}
+
+function audioPause() {
+  audioTag.pause();
+  // change button icon
+}
 
 function playTrack(track) {
   const trackAudioSrc = track.getAttribute('audio');
@@ -33,7 +54,7 @@ function playTrack(track) {
   });
 
   audioTag.setAttribute("src", trackAudioSrc);
-  audioTag.play();
+  audioPlay();
 }
 
 function nextTrack() {

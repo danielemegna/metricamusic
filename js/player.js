@@ -13,9 +13,7 @@ albumTracks.forEach((track) => {
   });
 });
 
-/*
-navigator.mediaSession.setActionHandler('previoustrack', () => previousTrack());
-*/
+//navigator.mediaSession.setActionHandler('previoustrack', () => previousTrack());
 navigator.mediaSession.setActionHandler('nexttrack', () => nextTrack());
 audioTag.addEventListener("ended", () => nextTrack());
 
@@ -31,9 +29,7 @@ function playTrack(track) {
     title: trackTitle,
     artist: trackArtist,
     album: albumTitle,
-    artwork: [
-      { src: albumCoverSrc, type: 'image/png' },
-    ]
+    artwork: [{ src: albumCoverSrc, type: 'image/png' }]
   });
 
   audioTag.setAttribute("src", trackAudioSrc);

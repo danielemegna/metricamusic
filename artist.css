@@ -77,6 +77,10 @@
     font-weight: 300;
 }
 
+.work span.track.playing {
+    color: #00ff00;
+}
+
 .work span.track > h3 {
     font-size: 1.0em;
     margin: 18px 0 4px 0;

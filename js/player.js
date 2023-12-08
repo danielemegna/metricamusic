@@ -15,9 +15,9 @@ albumTracks.forEach((track) => {
 
 /*
 navigator.mediaSession.setActionHandler('previoustrack', () => previousTrack());
-navigator.mediaSession.setActionHandler('nexttrack', () => nextTrack());
-audio.addEventListener("ended", () => nextTrack());
 */
+navigator.mediaSession.setActionHandler('nexttrack', () => nextTrack());
+audioTag.addEventListener("ended", () => nextTrack());
 
 navigator.mediaSession.setActionHandler('play', () => audioTag.play());
 navigator.mediaSession.setActionHandler('pause', () => audioTag.pause());
@@ -38,4 +38,18 @@ function playTrack(track) {
 
   audioTag.setAttribute("src", trackAudioSrc);
   audioTag.play();
+}
+
+function nextTrack() {
+  const playingTrack = document.querySelector("span.track.playing");
+  const playingTrackIndex = albumTracks.indexOf(playingTrack);
+  var nextTrackIndex = playingTrackIndex + 1;
+  if (nextTrackIndex === albumTracks.length)
+    nextTrackIndex = 0;
+
+  const nextTrack = albumTracks[nextTrackIndex];
+
+  playingTrack.classList.remove("playing");
+  nextTrack.classList.add("playing");
+  playTrack(nextTrack);
 }

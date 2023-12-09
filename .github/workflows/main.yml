@@ -18,9 +18,7 @@ jobs:
             cd metricamusic
             git pull --rebase --autostash
             docker build -t metricamusic .
-            docker stop metricamusic || true
-            docker rm metricamusic || true
-            docker run --rm -dp 99:80 --name metricamusic metricamusic
+            ./up-with-volumes
           host: metricamusic.it
           user: root
           key: ${{ secrets.PRIVATE_KEY}}

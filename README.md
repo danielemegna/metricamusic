@@ -4,12 +4,16 @@
 
 ## Dev Notes
 
+Build image and run:
+
 ```
 $ docker build -t metricamusic .
 $ docker run --rm -dp 99:80 --name metricamusic metricamusic
 ```
 
-or
+> to run with mounted mp3 volume see `up-with-volumes` script
+
+Dev mode (without image build):
 
 ```
 $ docker run --rm -itp 99:80 -v $PWD:/usr/share/nginx/html/ nginx:alpine

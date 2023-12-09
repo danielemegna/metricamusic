@@ -1,0 +1,9 @@
+#!/bin/sh
+
+docker rm -f metricamusic || true
+
+docker run --rm \
+  -dp 99:80 \
+  -v /root/metricamusic/mp3:/usr/share/nginx/html/mp3 \
+  --name metricamusic \
+  metricamusic

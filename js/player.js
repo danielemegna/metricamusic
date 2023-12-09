@@ -5,7 +5,6 @@ const audioTag = document.querySelector("audio");
 const pauseButton = document.querySelector("#pause-button");
 
 albumTracks.forEach((track) => {
-  return; // enable here
   track.addEventListener("click", (e) => {
     const trackToPlay = e.currentTarget;
     albumTracks.forEach((t) => t.classList.remove("playing"));
@@ -33,12 +32,14 @@ function toggleAudioPlayPause() {
 
 function audioPlay() {
   audioTag.play();
-  // change button icon
+  pauseButton.classList.remove('play');
+  pauseButton.classList.add('pause');
 }
 
 function audioPause() {
   audioTag.pause();
-  // change button icon
+  pauseButton.classList.remove('pause');
+  pauseButton.classList.add('play');
 }
 
 function playTrack(track) {

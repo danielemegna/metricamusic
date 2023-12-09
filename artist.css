@@ -117,6 +117,16 @@
     background-color: #00ff00;
 }
 
+#pause-button img {
+    height: 30px;
+    width: 30px;
+    object-view-box: inset(0px 0px 25px 208px);
+    content: url('/images/player-icons.png');
+}
+
+#pause-button.pause img { object-position: 109px -22px; }
+#pause-button.play img { object-position: 112px 5px; }
+
 .hidden {
     display: none !important;
 }

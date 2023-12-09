@@ -16,7 +16,7 @@ jobs:
         with:
           command: |
             cd metricamusic
-            git pull
+            git pull --rebase --autostash
             docker build -t metricamusic .
             docker stop metricamusic || true
             docker rm metricamusic || true

@@ -77,8 +77,9 @@
     font-weight: 300;
 }
 
-.work span.track.playing {
-    color: #00ff00;
+.work span.track {
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .work span.track > h3 {
@@ -87,6 +88,9 @@
     text-transform: uppercase;
     font-weight: 400;
 }
+
+.work span.track.playing > h3 { color: #00ff00; }
+.work span.track.unavailable > h3 { color: gray; }
 
 .work span.track > h5 {
     margin: 0;

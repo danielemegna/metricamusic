@@ -1,5 +1,2 @@
 # ignore mp3 root folder
 /mp3
-
-# ignore git folder !
-.git

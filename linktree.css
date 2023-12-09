@@ -36,7 +36,7 @@ a.button {
     align-items: center;
     gap: 10px;
     margin: auto;
-    margin-top: 24px;
+    margin-top: 20px;
     border: 2px solid white;
     width: 85%;
     height: 60px;
@@ -47,6 +47,7 @@ a.button img.social-label {
     max-height: 28px;
     max-width: 175px;
     object-fit: contain;
+    box-sizing: border-box;
 }
 
 

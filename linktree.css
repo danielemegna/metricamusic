@@ -41,28 +41,21 @@ a.button {
     width: 85%;
     height: 60px;
     border-radius: 30px;
+    text-decoration: none;
 }
 
-a.button img.social-label {
+/* ***** social name label ***** */
+a.button img:nth-child(1) {
     max-height: 28px;
     max-width: 175px;
     object-fit: contain;
     box-sizing: border-box;
 }
-
-
-a.button img.social-icon {
-    height: 40px;
-    width: auto;
-    object-view-box: inset(0px 0px 388px 386px);
-    content: url('/images/social-icons.png');
-}
-
-a.button {
-    text-decoration: none;
-}
-
-a.button label {
+a.b-youtube img:nth-child(1) { content: url("/images/youtube-label.png") }
+a.b-spotify img:nth-child(1) { content: url("/images/spotify-label.png") }
+a.b-soundcloud img:nth-child(1) { content: url("/images/soundcloud-label.png") }
+a.b-metrica img:nth-child(1) { content: url("/images/metricaplayer-label.png"); padding: 0 15px; }
+a.b-freedownload label {
     text-transform: uppercase;
     font-weight: 800;
     font-family: Roboto, sans-serif;
@@ -70,3 +63,16 @@ a.button label {
     font-size: x-large;
     padding-right: 4px;
 }
+
+/* ***** social icon ***** */
+a.button img:nth-child(2) {
+    height: 40px;
+    width: auto;
+    object-view-box: inset(0px 0px 388px 386px);
+    content: url('/images/social-icons.png');
+}
+a.b-metrica img:nth-child(2) { object-position: 157px -157px }
+a.b-soundcloud img:nth-child(2) { object-position: 52px -158px }
+a.b-youtube img:nth-child(2) { object-position: 0px 0px }
+a.b-spotify img:nth-child(2) { object-position: 0px -158px }
+a.b-freedownload img:nth-child(2) { object-position: 157px -105px }

@@ -121,15 +121,16 @@
     background-color: #00ff00;
 }
 
-#pause-button img {
-    height: 30px;
-    width: 30px;
-    object-view-box: inset(0px 0px 25px 208px);
-    content: url('/images/player-icons.png');
+#pause-button i {
+    height: 24px;
+    width: 24px;
+    background-image: url('/images/player-icons.png');
+    background-size: 243px 50px;
+    background-repeat: no-repeat;
 }
 
-#pause-button.pause img { object-position: 109px -22px; }
-#pause-button.play img { object-position: 112px 5px; }
+#pause-button.pause i { background-position: -112px -25px; }
+#pause-button.play i { background-position: -109px 2px; }
 
 .hidden {
     display: none !important;

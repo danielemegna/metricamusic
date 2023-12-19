@@ -81,3 +81,10 @@ a.b-soundcloud i { background-position: -156px -156px }
 a.b-youtube i { background-position: -208px 0px }
 a.b-spotify i { background-position: -208px -156px }
 a.b-freedownload i { background-position: -52px -104px }
+
+img.coming-soon-banner {
+    max-height: none!important;
+    height: 56px!important;
+    position: fixed!important;
+    content: url("/images/soon.png")!important;
+}

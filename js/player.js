@@ -1,6 +1,6 @@
 const albumTitle = document.querySelector("h3.album-title").innerText;
 const albumCoverSrc = document.querySelector("img.cover").getAttribute("src");
-const albumTracks = Array.from(document.querySelectorAll("span.track[audio]"));
+const albumTracks = Array.from(document.querySelectorAll("span.track:not(.unavailable)[audio]"));
 const audioHtmlTag = document.querySelector("audio");
 const pauseButton = document.querySelector("#pause-button");
 

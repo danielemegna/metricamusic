@@ -33,6 +33,32 @@
     padding-bottom: 20px;
 }
 
+.bio .social-row {
+    display: flex;
+    height: 40px;
+    position: absolute;
+    right:24px;
+    top:-70px;
+    justify-content: flex-end;
+    gap: 1rem;
+
+    .artist-social-icon {
+        width: 40px;
+        height: 40px;
+        background-image: url(/images/social-icons.png);
+        background-repeat: no-repeat;
+        background-size: 248px 248px;
+        filter: invert(100%);
+        border: 1px solid gray;
+        border-radius: 25%;
+
+        &.instagram { background-position: -156px 0px; }
+        &.youtube { background-position: -208px 0px; }
+    }
+
+}
+
+
 .bio p {
     color: rgb(74, 74, 74);
     margin: 24px;

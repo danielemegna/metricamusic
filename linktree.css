@@ -18,8 +18,19 @@ header {
     margin-bottom: 40px;
 }
 
+main {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main > span {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
 span.cover {
-    width: 100%;
     display: block;
     text-align: center;
 }
@@ -30,19 +41,44 @@ span.cover img {
     margin-bottom: 10px;
 }
 
+span.buttons {
+    margin-top: 20px;
+}
+
 a.button {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     margin: auto;
-    margin-top: 20px;
+    margin-bottom: 20px;
     border: 2px solid white;
     width: 85%;
+    max-width: 450px;
     height: 60px;
     border-radius: 30px;
     text-decoration: none;
 }
+
+@media (min-width: 992px) {
+    main {
+        flex-wrap: nowrap;
+        height: 70vh;
+    }
+    main > span {
+        flex-basis: 35%;
+        flex-grow: 0;
+    }
+    span.buttons {
+        margin-top: 0;
+    }
+    span.cover img {
+        width: 90%;
+        max-width: 450px;
+    }
+
+}
+
 
 /* ***** social name label ***** */
 a.button img {
@@ -86,6 +122,6 @@ a.b-freedownload i { background-position: -52px -104px }
 img.coming-soon-banner {
     max-height: none!important;
     height: 56px!important;
-    position: fixed!important;
+    position: absolute;
     content: url("/images/soon.png")!important;
 }
